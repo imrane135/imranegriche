@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition Project</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header nav a:hover,
+        header nav a:focus,
+        header nav a.active {
+            background-color: #f56277;
+            color: #fff;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f56277;
+            padding-bottom: 5px;
+        }
+
+        section p {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        video {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Face Recognition Project</h1>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="#description">Description</a>
+        </nav>
+    </header>
+
+    <section id="description">
+        <h2>Project Description</h2>
+        <p>
+            This project focuses on building a Face Recognition system using state-of-the-art deep learning models. 
+            The goal is to detect and identify faces in images or videos with high accuracy. 
+            The system can be used in various real-world applications, such as security, authentication, and personalized user experiences.
+        </p>
+        <p>
+            The project utilizes <strong>Convolutional Neural Networks (CNN)</strong> for feature extraction and classification. 
+            Training was conducted using a dataset of labeled face images. 
+            OpenCV and Python libraries were employed to pre-process the images and detect faces in real-time or from video inputs.
+        </p>
+    </section>
+
+    <section id="demo">
+        <h2>Video Demonstration</h2>
+        <video controls width="640" height="360">
+            <source src="C:/Users/imrane/Downloads/johndoe/final.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Watch a demonstration of the Face Recognition system in action!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mohammed Imrane Griche. All rights reserved.</p>
+    </footer>
+</body>
+</html>

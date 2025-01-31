@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/spam.css') }}">
+
+    
+    <title>Spam Email Classifier</title>
+</head>
+<body>
+    <p>The objective of this project was to apply Random forest to classify emails if they are spam or not</p>
+    <div style="text-align: center;">
+        <h1>Spam Email Classifier</h1>
+        <form method="POST" action="/spam-detection-project">
+            <label for="email_text">Enter email content:</label><br><br>
+            <textarea name="email_text" rows="10" cols="50" placeholder="Paste the email content here..."></textarea><br><br>
+            <button type="submit">Check email</button>
+        </form>
+
+        {% if prediction_text %}
+            <h2>{{ prediction_text }}</h2>
+        {% endif %}
+
+        {% if error %}
+            <h2 style="color: red;">{{ error }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
