@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tifinagh Characters Recognition</title>
+    <link rel="stylesheet" href="tifinagh.css">
+</head>
+<body>
+    <header>
+        <h1>Tifinagh</h1>
+    </header>
+
+    <section id="description">
+        <h2>Project Description</h2>
+        <p>
+            This project is an AI-powered optical character recognition (OCR) system designed to identify and process Tifinagh characters from images and scanned documents. It leverages deep learning models to extract and recognize characters, enabling applications such as text digitization, language preservation, and historical manuscript analysis.
+        </p>
+        <p>
+            To achieve high accuracy, we experimented with multiple approaches, including Tesseract OCR, Support Vector Machines (SVM), PaddleOCR, and Convolutional Neural Networks (CNN). While SVM, PaddleOCR, and CNN delivered promising results, SVM struggled with performance on the test dataset. Ultimately, our final models were built using CNN and PaddleOCR, which provided the best accuracy for Tifinagh script recognition.
+        </p>
+        <p>
+            The system is implemented using Flask, providing a simple and efficient interface for processing and recognizing Tifinagh characters. Users can upload images, and the model processes them to extract and display recognized text in real time.
+        </p>
+    </section>
+
+    <section id="demo">
+        <h2>Demonstration Video</h2>
+        <video controls controlsList="nodownload" width="640" height="360">
+            <source src="tifinagh_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Thank you for watching!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mohammed Imrane Griche. All rights reserved.</p>
+    </footer>
+</body>
+</html>
