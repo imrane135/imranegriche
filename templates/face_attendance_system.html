@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/face.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Face Recognition Project</h1>
+    </header>
+
+    <section id="description">
+        <h2>Project Description</h2>
+        <p>
+            This project implements a face recognition system that can identify and verify individuals from images or video streams. The system leverages deep learning-based face detection and recognition models to analyze facial features and compare them against a database of known individuals. The project integrates a MySQL database to store and manage facial embeddings, user details, and authentication logs. The system can be used for various applications, such as attendance tracking, security authentication, and access control.
+        </p>
+        <p>
+            Technologies Used<br>
+            Python : Main programming language for development<br>
+            OpenCV : Face detection and image preprocessing<br>
+            DeepFace : Pre-trained deep learning model for face recognition<br>
+            MySQL : Database to store user information and facial embeddings<br>
+            Flask  : Web framework for API and user interface<br>
+            PyMySQL  : Database connection and queries<br>
+            PyQt : GUI for user interaction<br>
+          </p>
+    </section>
+
+    <section id="demo">
+        <h2>Video Demonstration</h2>
+        <video controls controlsList="nodownload" width="640" height="360">
+            <source src="{{ url_for('static', filename='videos/final.mp4') }}" type="video/mp4">
+        </video>
+        <p>Watch a demonstration of the Face Recognition system in action!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mohammed Imrane Griche. All rights reserved.</p>
+    </footer>
+</body>
+</html>

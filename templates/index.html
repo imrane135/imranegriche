@@ -1,325 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with JohnDoe landing page.">
-    <meta name="author" content="Devcrud">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cs.css') }}">
     <title>Imrane Griche</title>
-
-    <!-- Font Icons -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/themify-icons/css/themify-icons.css') }}">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/bootstrap/bootstrap.min.css') }}">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/johndoe.css') }}">
 </head>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <header class="header">
-        <div class="container">
-            <!-- <ul class="social-icons pt-3">
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-            </ul> -->
- <div class="header-content">
-    <h4 class="header-subtitle">Hello, I am</h4>
-    <h1 class="header-title">Mohammed Imrane Griche</h1>
-    <h6 class="header-mono">AI Student</h6>
-
-    <!-- Download CV Buttons -->
-    <a href="{{ url_for('static', filename='files/cv_english.pdf') }}" download="CV_English.pdf" class="btn btn-primary btn-rounded">
-        <i class="ti-printer pr-2"></i>Download my CV (English)
-    </a>
-    <a href="{{ url_for('static', filename='files/cv_french.pdf') }}" download="CV_French.pdf" class="btn btn-primary btn-rounded">
-        <i class="ti-printer pr-2"></i>Download my CV (French)
-    </a>
-</div>
-    </header>
-
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
-        <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#resume" class="nav-link">Resume</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav brand">
-                    <img src="{{ url_for('static', filename='imgs/DSC_6821.JPG') }}" alt="" class="brand-img">
-                    <li class="brand-txt">
-                        <h5 class="brand-title">Mohammed Imrane Griche</h5>
-                        <div class="brand-subtitle">AI student | Datascience</div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <!-- <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#blog" class="nav-link">Blog</a>
-                    </li> -->
-                    <li class="nav-item last-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Mohammed Imrane <span>Griche</span>
             </div>
-        </div>
-    </nav>
-
-    <div class="container-fluid">
-        <div id="about" class="row about-section">
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Who am I?</h3>
-                <span class="line mb-5"></span>
-                <h5 class="mb-3">AI Student</h5>
-                <p class="mt-20">I am currently looking for an end-of-studies internship (PFE) in the AI domain. I have experience in Machine Learning, Deep Learning, Computer Vision, and Natural Language Processing (NLP).</p>
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Personal Info</h3>
-                <span class="line mb-5"></span>
-                <ul class="mt40 info list-unstyled">
-                    <li><span>Birthdate</span>: 09/09/2001</li>
-                    <li><span>Email</span>: imranegriche@gmail.com</li>
-                    <li><span>Phone</span>: + (212) 0652474717</li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/mohammed-imrane-griche/" target="_blank">
-                            <span>LinkedIn</span>: Mohammed Imrane Griche
-                        </a>
-                    </li>
-                    <li><span>Address</span>: Hey hemich Kenitra Morocco 14000.</li>
-                </ul>
-                <!-- <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                </ul> -->
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">My Expertise</h3>
-                <span class="line mb-5"></span>
-                <div class="row">
-                    <img src="{{ url_for('static', filename='imgs/python.png') }}" alt="Python Icon" class="icon-lg" style="width: 24px; height: 24px;">          
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Python</h6>
-                        <hr>
-                    </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="about" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                    <a href="{{ url_for('projects') }}">Projects</a>
                 </div>
-                <div class="row">
-                    <img src="{{ url_for('static', filename='imgs/brain.png') }}" alt="Python Icon" class="icon-lg" style="width: 24px; height: 24px;">          
-                              <div class="col-10 ml-auto mr-3">
-                        <h6>Machine learning</h6>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <img src="{{ url_for('static', filename='imgs/deep-learning.png') }}" alt="Python Icon" class="icon-lg" style="width: 24px; height: 24px;">          
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Deep learning</h6>
-                        <hr>
-                    </div>
-                </div>
+                <a href="#contact">Contact</a>
             </div>
-        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
     </div>
-
-    <!-- Resume Section -->
-    <section class="section" id="resume">
-        <div class="container">
-            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Education</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">2017 - Present</h6>
-                            <p>Master's Degree Artificial intelligence and virtual reality</p>
-                            <hr>
-                            <h6 class="title text-danger">2020 - 2023</h6>
-                            <p>Bachelor's degree</p>
-                            <hr>
-                            <h6 class="title text-danger">2020</h6>
-                            <p>accalaureate</p>
-                        </div>
-                    </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="{{ url_for('static', filename='imgs/DSC_6821.JPG') }}" alt="">
+            </div>
+            
+            <div id="about" class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Imrane</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Hello everyone, I am Mohammed Imrane Griche. I am a student pursuing my Master's degree in Artificial Intelligence and Virtual Reality. I am currently looking for my end-of-studies internship (PFE).</p>
+                <div class="social-links">
+                    <!-- <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a> -->
+                    <a href="https://linkedin.com/in/mohammed-imrane-griche/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                    <!-- <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i></a> -->
                 </div>
-                <div class="col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Skills</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body pb-2">
-                            <h6>Python</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Tensorflow / Pytorch</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Flask</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>SQL</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Java</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>HTML/CSS</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Languages</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body pb-2">
-                            <h6>English</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>French</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Arabic</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">     
+                    <button onclick="window.location.href='{{ url_for('static', filename='files/CV_English.pdf') }}'">Download CV (English)</button>
+                    <button onclick="window.location.href='{{ url_for('static', filename='files/CV_French.pdf') }}'">Download CV (French)</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="section" id="service">
-        <div class="container">
-            <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Projects</h2>
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5" onclick="window.location.href='{{ url_for('static', filename='templates/face_recognition.html') }}';" style="cursor: pointer;">
-                        <div class="card-header has-icon"></div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Face Attendance System</h5>
-                            <p class="subtitle">
-                                Creating a Face Attendance System where individuals can access a specific facility or area using their faces.
-                                This system has two options: sign in for already registered users and sign up for new users. The system is connected to a <strong>MySQL Database</strong>.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5" onclick="window.location.href='{{ url_for('static', filename='templates/DDD.html') }}';" style="cursor: pointer;">
-                        <div class="card-header has-icon"></div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Dermatological Disease Detection</h5>
-                            <p class="subtitle">This project focuses on detecting dermatological diseases using deep learning and computer vision techniques. 
-                                It classifies skin lesions as benign or malignant using a convolutional neural network (CNN).</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <a href="tel:(+212) 0652474717"><i class="fa-solid fa-phone"></i>  tel:(+212) 0652474717</a>
+            <a href="mailto:imranegriche@gmail.com"><i class="fa-solid fa-envelope"></i> imranegriche@gmail.com</a>
+            <a href="https://linkedin.com/in/mohammed-imrane-griche/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
         </div>
-        <div class="col-md-4 col-sm-6">
-            <div class="card mb-5" onclick="window.location.href='{{ url_for('static', filename='templates/tifinagh.html') }}';" style="cursor: pointer;">
-                <div class="card-header has-icon"></div>
-                <div class="card-body px-4 py-3">
-                    <h5 class="mb-3 card-title text-dark">Tifinagh Character Recognition</h5>
-                    <p class="subtitle">This project aims to recognize Tifinagh text and be capable of converting images to text.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
-
+   
+    </section>
     
-
-    <!-- Contact Section -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="contact-info-card">
-                    <h4 class="contact-title">Get in touch</h4>
-                    <div class="row mb-2">
-                        <div class="col-1 pt-1 mr-1">
-                            <i class="ti-mobile icon-md"></i>
-                        </div>
-                        <div class="col-10">
-                            <h6 class="d-inline">Phone: <br> <span class="text-muted">+ (212) 0652474717</span></h6>
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-1 pt-1 mr-1">
-                            <i class="ti-map-alt icon-md"></i>
-                        </div>
-                        <div class="col-10">
-                            <h6 class="d-inline">Address: <br> <span class="text-muted">Hey hemich Kenitra Morocco 14000.</span></h6>
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-1 pt-1 mr-1">
-                            <i class="ti-envelope icon-md"></i>
-                        </div>
-                        <div class="col-10">
-                            <h6 class="d-inline">Email: <br> <span class="text-muted">imranegriche@gmail.com</span></h6>
-                        </div>
-                    </div>
-                    <!-- <ul class="social-icons pt-4">
-                        <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                        <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                        <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
-                        <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                        <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                    </ul> -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer py-3">
-        <div class="container">
-            <p class="small mb-0 text-light">
-                &copy; <script>document.write(new Date().getFullYear())</script> Mohammed Imrane Griche
-            </p>
-        </div>
-    </footer>
-
-    <!-- Core JS -->
-    <script src="{{ url_for('static', filename='vendors/jquery/jquery-3.4.1.js') }}"></script>
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="{{ url_for('static', filename='js/jv.js') }}"></script>
+</body>
+</html>
